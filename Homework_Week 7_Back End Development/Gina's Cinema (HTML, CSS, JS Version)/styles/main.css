@@ -1,0 +1,116 @@
+.ticket-form {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+body {
+  background-image: url("/images/background.jpg");
+  background-size: cover;
+  height: auto;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px 0;
+}
+
+.price-info {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.form-label {
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: #0056b3;
+  border-color: #0056b3;
+  padding: 10px 20px;
+  font-weight: 500;
+}
+
+.btn-primary:hover {
+  background-color: #004494;
+  border-color: #004494;
+}
+
+.alert {
+  margin-bottom: 20px;
+}
+
+.price-info .row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.price-info .row > div {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: 4px 15px;
+  align-items: center;
+}
+
+.subtotal-row {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #dee2e6;
+}
+
+#discountRow {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed #dee2e6;
+}
+
+#discountRow > div {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: 4px 15px;
+  align-items: center;
+}
+
+.total-row {
+  color: #0056b3;
+  font-size: 1.1em;
+}
+
+.ticket-quantities {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Validasi input */
+input:invalid {
+  border-color: #dc3545;
+}
+
+input:invalid:focus {
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+/* Price alignment fixes */
+.text-end {
+  text-align: right !important;
+}
+
+.price-info .row .col-8,
+.price-info .row .col-4 {
+  padding: 4px 15px;
+}
+
+/* Grid layout for better alignment */
+.price-detail-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+  padding: 4px 15px;
+  align-items: center;
+}
